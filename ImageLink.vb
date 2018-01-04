@@ -1,4 +1,4 @@
-Sub insertPicture(picpath As String, cellAddress As String, fileArray As Variant)
+Sub insertPicturesAsLinks(picpath As String, cellAddress As String, fileArray As Variant)
     '----------------------------------------------------------------------------
     ' "THE BURGER-WARE LICENSE" (Revision 42):
     ' <abybaddi009 gmail.com> wrote this code. As long as you retain this notice you
@@ -6,7 +6,7 @@ Sub insertPicture(picpath As String, cellAddress As String, fileArray As Variant
     ' this stuff is worth it, you can buy me a burger in return. ;-) -Abhishek Baddi
     '----------------------------------------------------------------------------
     ' Usage: 
-    ' insertPicture Application.ActiveWorkbook.Path & "\link.png", "A1", fileArray
+    ' insertPicturesAsLinks Application.ActiveWorkbook.Path & "\link.png", "A1", fileArray
     '----------------------------------------------------------------------------
     ' example:
     ' Sub PutLinksInACell()
@@ -14,7 +14,7 @@ Sub insertPicture(picpath As String, cellAddress As String, fileArray As Variant
     '    Dim fileArray
     '    fileArray = Array("Folder\File1.pdf", "Folder\File2.docx", "Folder\File3.pdf")
     '    'rangeAddress = Selection.Cells(1, 1).Address(RowAbsolute:=False, ColumnAbsolute:=False)
-    '    insertPicture Application.ActiveWorkbook.Path & "\link.png", "B9", fileArray
+    '    insertPicturesAsLinks Application.ActiveWorkbook.Path & "\link.png", "B9", fileArray
     ' End Sub
 
     Dim spacing As Long, size As Long
